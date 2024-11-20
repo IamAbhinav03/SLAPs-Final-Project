@@ -83,6 +83,12 @@ Technical Approach
     2.	Hint System: Zeta uses Z3 to generate soulutions to the problem and gives hints based on the user’s progress, providing optimal assistance without revealing solutions outright unless specified
     3.	User Interface: The terminal interface will present puzzles and hints in a clear, engaging format, with points and hints shown dynamically as the player progresses.
 
+# How to run the game
+
+- Create a virtual environment
+- install the dependcies in the rquriements.txt
+- run the main.py file.
+
 <!--
 Summary
 
