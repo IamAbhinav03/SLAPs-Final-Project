@@ -10,20 +10,20 @@ Game Flow and Mechanics
         - Player’s character is a skilled logician stranded on an uninhabited island.
         - They encounter an old computer in an abandoned facility, which begins guiding them through logic puzzles as a form of “survival training.”
     2.	Character Introduction: Zeta:
-        - Zeta, an AI assistant, guides players through puzzles, offering hints powered by Z3.
-        - Zeta’s hints come at a point cost:
+        - Zeta, an SAT assistant, guides players through puzzles, offering hints powered by Z3.
+        <!-- - Zeta’s hints come at a point cost:
         - Nudge (10 points): A subtle directional hint.
         - Push (50 points): A significant hint, clarifying a puzzle element.
         - Solution (100 points): Full solution, sparingly offered.
     3.	Point System:
         - Players start with 500 points and earn more by solving puzzles.
-        - Points are deducted based on the hint type used, encouraging players to solve problems with minimal hints.
+        - Points are deducted based on the hint type used, encouraging players to solve problems with minimal hints. -->
 
 Puzzle Progression
 
 Each puzzle introduces players to a new problem that requires reasoning or optimization, often demanding Z3’s capabilities for verification or complex constraint satisfaction. Here’s the initial set of puzzles:
 
-Puzzle 1: Non-Linear Sudoku
+Puzzle 1: Constrained Sudoku
 
     •	Goal: Complete a Sudoku grid with additional non-linear constraints.
     •	Constraints:
@@ -32,48 +32,49 @@ Puzzle 1: Non-Linear Sudoku
     •	Product of cells in another region is a square.
     •	Z3 Usage: Validate solution correctness due to non-linear constraints.
 
-Puzzle 2: Sorting Algorithm Verification
+<!-- Puzzle 2: Sorting Algorithm Verification
 
     •	Goal: Ensure sorting algorithm is functionally correct.
     •	Constraints:
     •	Recursive functions and conditional statements.
-    •	Z3 Usage: Validate sorting through formal verification.
+    •	Z3 Usage: Validate sorting through formal verification. -->
 
-Puzzle 3: Optimal Resource Allocation
+<!-- Puzzle 3: Optimal Resource Allocation
 
     •	Goal: Maximize profit with three resources and non-linear cost functions.
     •	Constraints:
     •	Each resource has a unique, non-linear cost formula.
     •	Profit is calculated based on resource allocation.
     •	Budget constraint (100 units).
-    •	Z3 Usage: Optimize allocation and prove solution optimality.
+    •	Z3 Usage: Optimize allocation and prove solution optimality. -->
 
-Puzzle 4: Scheduling with Dependencies
+<!-- Puzzle 4: Scheduling with Dependencies
 
     •	Goal: Minimize task duration considering dependencies and non-linear constraints.
     •	Constraints:
     •	Four tasks, each with specific dependencies.
     •	Duration functions for each task.
-    •	Z3 Usage: Optimize schedule within constraints, verifying correctness.
+    •	Z3 Usage: Optimize schedule within constraints, verifying correctness. -->
 
-Puzzle 5: Non-Linear Knapsack
+<!-- Puzzle 5: Non-Linear Knapsack
 
     •	Goal: Maximize profit with items that have non-linear weights and values.
     •	Constraints:
     •	Each item has unique weight and value functions.
     •	Knapsack capacity constraint.
-    •	Z3 Usage: Find optimal item selection and confirm correctness.
+    •	Z3 Usage: Find optimal item selection and confirm correctness. -->
 
-Puzzle 7: Digital Signature Security
+<!-- Puzzle 7: Digital Signature Security
 
     •	Goal: Confirm security of a digital signature scheme.
     •	Constraints:
     •	Involves signing and verification with public-private key pairs.
-    •	Z3 Usage: Ensure validity and authenticity of the scheme.
+    •	Z3 Usage: Ensure validity and authenticity of the scheme. -->
 
 Future Plans
 
     1.	Define the puuzzles more properly and solve it using z3
+    2. Find more puzzles that will use sat solvers
     3.	Story and Character Development: Expanding Zeta’s role and player choices will add depth to the narrative, including multiple potential endings based on puzzle-solving strategies.
 
 Technical Approach
@@ -82,6 +83,7 @@ Technical Approach
     2.	Hint System: Zeta uses Z3 to generate soulutions to the problem and gives hints based on the user’s progress, providing optimal assistance without revealing solutions outright unless specified
     3.	User Interface: The terminal interface will present puzzles and hints in a clear, engaging format, with points and hints shown dynamically as the player progresses.
 
+<!--
 Summary
 
-Logic Island Survival merges storytelling with logic-based challenges to create an engaging puzzle-solving experience. The use of Z3 for problem verification and hint generation provides players with authentic reasoning challenges, highlighting the strengths of SAT solvers in complex logic applications. Through the character Zeta, players receive assistance, enhancing the gameplay with strategic decisions around point usage and problem-solving. This project promises to showcase the application of logical reasoning in a simulated survival scenario, offering both an intellectual and narrative-driven adventure.
+Logic Island Survival merges storytelling with logic-based challenges to create an engaging puzzle-solving experience. The use of Z3 for problem verification and hint generation provides players with authentic reasoning challenges, highlighting the strengths of SAT solvers in complex logic applications. Through the character Zeta, players receive assistance, enhancing the gameplay with strategic decisions around point usage and problem-solving. This project promises to showcase the application of logical reasoning in a simulated survival scenario, offering both an intellectual and narrative-driven adventure. -->
